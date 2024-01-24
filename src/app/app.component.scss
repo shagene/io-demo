@@ -1,0 +1,38 @@
+/* app.component.scss */
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+app-bar {
+  z-index: 2;
+  width: calc(100% - 88px); /* Subtract nav-rail width */
+  margin-left: 88px; /* Start after nav-rail */
+}
+
+app-theme-switcher {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}
+
+app-nav-rail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1;
+  width: 88px; /* Width of the nav rail */
+}
+
+.router-container {
+  margin-top: 68px; /* Height of the app bar */
+  margin-left: 88px; /* Width of the nav rail */
+  flex-grow: 1;
+  overflow: auto;
+  background-color: var(--app-background-color);
+  padding: 24px;
+}
+

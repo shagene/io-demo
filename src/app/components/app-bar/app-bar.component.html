@@ -1,0 +1,18 @@
+<!-- app-bar.component.html -->
+
+<mat-toolbar [ngClass]="currentTheme">
+  <div class="app-bar-content">
+    <div class="logo-container">
+      <!-- Company logo here -->
+      <img class="logo-part" [src]="dwLogoSrc" alt="CS Logo" />
+    </div>
+    <div class="icon-buttons-container">
+      <!-- Anywhere in your application -->
+      <mat-icon>settings</mat-icon>
+      <mat-icon>note_add</mat-icon>
+      <mat-icon matBadge="4" matBadgeColor="warn">notifications_active</mat-icon>
+      <mat-icon>calendar_month</mat-icon>
+      <img class="profileImg" src="../../../assets/images/profile.jpeg" alt="Profile Image" />
+    </div>
+  </div>
+</mat-toolbar>

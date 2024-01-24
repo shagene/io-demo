@@ -1,0 +1,19 @@
+<div class="theme-selector">
+    <button mat-fab 
+            class="theme-toggle-button" 
+            [ngClass]="{'theme-1-light': activeTheme === 'theme-1-light', 'theme-1-dark': activeTheme === 'theme-1-dark'}" 
+            (click)="toggleThemeOptions()">
+      <mat-icon>palette</mat-icon>
+    </button>
+  
+    <div class="theme-options" [class.show]="showThemeOptions">
+      <button mat-mini-fab class="theme-1-light theme-toggle-button" (click)="setTheme('theme-1-light')">
+        <mat-icon>brightness_high</mat-icon>
+      </button>
+  
+      <button mat-mini-fab class="theme-1-dark theme-toggle-button" (click)="setTheme('theme-1-dark')">
+        <mat-icon>brightness_3</mat-icon>
+      </button>
+    </div>
+  </div>
+  

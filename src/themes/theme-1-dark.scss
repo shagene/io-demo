@@ -1,0 +1,32 @@
+/* theme-1-dark.scss */
+@mixin theme-1-dark {
+  --app-bar-bg: #111111; // Dark theme background color
+  --text-color: #ffffff; // Dark theme text color
+  --navrail-bg: #333333; // Dark theme nav-rail
+  --app-background-color: #111111; // Dark background color of the app
+  --text-color-header-heading: #FFF; // Dark theme header heading color
+  --icon-color-header: #FFFFFF; // Dark theme header icon color
+  --icon-border-color-header: #E0E0E0; // Dark theme header icon border color
+  --card-background-color: #333333; // Dark theme card color
+  --app-bar-icon-color: #343330; // Dark theme app bar icon color
+  --footer-bg: #ffffff;
+  --fab-color: var(--genoa-500);
+  --info-color-border: #e7f0f4;
+  --info-color-bg: #186c93;
+  --warning-color-border: #fdf6e5;
+  --warning-color-bg: #f0ab00;
+  --error-color-border: #fceaea;
+  --error-color-bg: #e03131;
+  --success-color-border: #e8f0ec;
+  --success-color-bg: #1e7040;
+  --new-feature-color-bg: var(--genoa-500);
+  --new-feature-color-border: var(--genoa-100);
+  // square icon button styles
+  --square-icon-button-border-color: #E0E0E0;
+  --square-icon-button-background-color: #FFF;
+}
+
+// This selector should match the value set in the data-theme attribute when the dark theme is active
+[data-theme="theme-1-dark"] {
+  @include theme-1-dark;
+}

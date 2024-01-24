@@ -1,0 +1,45 @@
+.theme-selector {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+
+  .theme-toggle-button {
+    &.theme-1-light {
+      background-color: var(--disco-500);
+  color: white;
+    }
+    &.theme-1-dark {
+      background-color: var(--genoa-500);
+      color: white;
+    }
+  }
+
+  .theme-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    visibility: hidden;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    button {
+      margin-top: 8px;
+    }
+  }
+}
+
+.theme1 {
+  background-color: var(--disco-500);
+  color: white;
+}
+
+.theme2 {
+  background-color: var(--genoa-500);
+  color: white;
+}

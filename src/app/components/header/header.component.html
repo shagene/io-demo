@@ -1,0 +1,15 @@
+<!-- header.component.html -->
+
+  <div class="header-wrapper">
+    <div class="header">
+        <div class="header-left">
+          <ng-content select="[header-left]"></ng-content>
+        </div>
+        <div class="header-right">
+          <ng-container *ngFor="let icon of icons">
+            <mat-icon matTooltip="{{icon.tooltip}}" class="clickable-icon ">{{ icon.name }}</mat-icon>
+          </ng-container>
+          <ng-content select="[header-right]"></ng-content>
+        </div>
+      </div>
+  </div>

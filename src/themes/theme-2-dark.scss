@@ -1,0 +1,48 @@
+/* theme-2-dark.scss */
+
+@use '@angular/material' as mat;
+@import 'custom_styles'; // Import custom color definitions
+
+// Define your custom theme colors using Angular Material color palettes
+// Adjust the default, lighter, and darker shades as needed
+$cerulean-palette: mat.define-palette(mat.$blue-palette, 500, 100, 700);
+$sunglow-palette: mat.define-palette(mat.$yellow-palette, 500, 100, 700);
+
+// Define a dark theme using your custom palettes
+$theme-2-dark: mat.define-dark-theme((
+  color: (
+    primary: $cerulean-palette,
+    accent: $sunglow-palette,
+    // Define other palettes like warn, etc., if needed
+  )
+));
+
+// Include the core styles for Angular Material components
+@include mat.core();
+
+// Include Angular Material component themes
+@include mat.all-component-themes($theme-2-dark);
+
+@mixin theme-2-dark {
+  :root {
+    --primary-color: var(--cerulean-200); // Use custom color variable
+    --secondary-color: var(--sunglow-200); // Use custom color variable
+    --navrail-bg: #202020; // Dark background for nav rail
+    --app-bar-bg: #121212; // Dark background for app bar
+    --footer-bg: #121212; // Dark background for footer
+    --fab-color: var(--cerulean-200); // Use custom color variable
+    --info-color-bg: #2a5a8e; // Dark info background
+    --info-color-border: #4178be; // Info border color
+    --warning-color-bg: #b58105; // Dark warning background
+    --warning-color-border: #f0ab00; // Warning border color
+    --error-color-bg: #a30000; // Dark error background
+    --error-color-border: #e03131; // Error border color
+    --success-color-bg: #0f5132; // Dark success background
+    --success-color-border: #1e7040; // Success border color
+    --new-feature-color-bg: var(--cerulean-300); // Use custom color variable
+    --new-feature-color-border: var(--cerulean-500); // Use custom color variable
+    --new-font: 'Overpass', sans-serif; // Assuming 'Overpass' is the font family name
+    --text-color: #e0e0e0; // Light text color for readability
+    --background-color: #121212; // General dark background color
+  }
+}

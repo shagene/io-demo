@@ -1,0 +1,17 @@
+<!-- nav-rail.component.html -->
+<div [ngClass]="currentTheme" class="nav-rail-container">
+  <div class="nav-rail-logo">
+    <img src="../../../assets/images/clogo.svg" alt="Logo">
+  </div>
+  <div class="nav-rail-buttons">
+    <app-nav-rail-button icon="home" title="Home" route="/home" matTooltip="Home"></app-nav-rail-button>
+    <app-nav-rail-button icon="apps" title="Apps" route="/apps" matTooltip="Apps"></app-nav-rail-button>
+    <app-nav-rail-button icon="folder" title="Files" route="/files" matTooltip="Files"></app-nav-rail-button>
+    <app-nav-rail-button icon="account_balance_wallet" title="Holders" route="/holders" matTooltip="Holders"></app-nav-rail-button>
+    <app-nav-rail-button icon="assessment" route="/reports" title="Reports" matTooltip="Reports"></app-nav-rail-button>
+    <app-nav-rail-button icon="space_dashboard" route="/spaces" title="Spaces" matTooltip="Spaces"></app-nav-rail-button>
+  </div>
+  <div class="nav-rail-help">
+    <app-nav-rail-button icon="help_center" title="Help" route="/helpcenter" matTooltip="Help Center"></app-nav-rail-button>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+/* theme-1-light.scss */
+@mixin theme-1-light {
+  --app-bar-bg: #F4F6F8; // Light theme background color
+  --text-color: #000000; // Light theme text color
+  --navrail-bg: #333333; // Light theme navrail
+  --app-background-color: #F4F6F8; // Light background color of the app
+  --text-color-header-heading: #93186C; // Light theme header heading color
+  --icon-color-header: #333333; // Light theme header icon color
+  --icon-border-color-header: #E0E0E0; // Light theme header icon border color
+  --card-background-color: ##FFF;  // Light theme card color
+  --app-bar-icon-color: #343330; // Light theme app bar icon color
+  --footer-bg: #ffffff;
+  --fab-color: var(--disco-500);
+  --info-color-bg: #ccdef1;
+  --info-color-border: #005bbb;
+  --warning-color-bg: #fceecc;
+  --warning-color-border: #f0ab00;
+  --error-color-bg: #f9d6d6;
+  --error-color-border: #e03131;
+  --success-color-bg: #d2e2d9;
+  --success-color-border: #1e7040;
+  --new-feature-color-bg: var(--disco-100);
+  --new-feature-color-border: var(--disco-500);
+  // square icon button styles
+  --square-icon-button-border-color: #9e9e9e;
+  --square-icon-button-background-color: #424242;
+}
+
+// This selector should match the value set in the data-theme attribute when the light theme is active
+[data-theme="theme-1-light"] {
+  @include theme-1-light;
+}

@@ -1,0 +1,28 @@
+/* square-icon-button.component.scss */
+
+@import '../../../themes/custom_theme.scss';
+
+button.mat-stroked-button.common-stroked-button-styles {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  line-height: 1;
+  
+  border: 1px solid var(--square-icon-button-border-color);
+  background: var(--square-icon-button-background-color);
+}
+
+button.mat-stroked-button .mat-icon.icon-size {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  // Add icon color variable if needed
+}
+  

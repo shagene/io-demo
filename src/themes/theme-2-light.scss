@@ -1,0 +1,46 @@
+/* theme-2-light.scss */
+
+@use '@angular/material' as mat;
+@import 'custom_styles'; // Import custom color definitions
+
+// Define your custom theme colors using Angular Material color palettes
+// Adjust the default, lighter, and darker shades as needed
+$cerulean-palette: mat.define-palette(mat.$blue-palette, 500, 100, 700);
+$sunglow-palette: mat.define-palette(mat.$yellow-palette, 500, 100, 700);
+
+// Define a light theme using your custom palettes
+$theme-2-light: mat.define-light-theme((
+  color: (
+    primary: $cerulean-palette,
+    accent: $sunglow-palette,
+    // Define other palettes like warn, etc., if needed
+  )
+));
+
+// Include the core styles for Angular Material components
+@include mat.core();
+
+// Include Angular Material component themes
+@include mat.all-component-themes($theme-2-light);
+
+@mixin theme-2-light {
+  :root {
+    --primary-color: var(--cerulean-500); // Use custom color variable
+    --secondary-color: var(--sunglow-500); // Use custom color variable
+    --navrail-bg: #e0e0e0; // Light background for nav rail
+    --app-bar-bg: #ffffff; // White background for app bar
+    --footer-bg: #ffffff; // White background for footer
+    --fab-color: var(--cerulean-500); // Use custom color variable
+    --info-color-bg: #c2e0fc; // Light info background
+    --info-color-border: #70b8f8; // Info border color
+    --warning-color-bg: #ffefbf; // Light warning background
+    --warning-color-border: #ffdb66; // Warning border color
+    --error-color-bg: #f9d6d6; // Light error background
+    --error-color-border: #e03131; // Error border color
+    --success-color-bg: #d2e2d9; // Light success background
+    --success-color-border: #1e7040; // Success border color
+    --new-feature-color-bg: var(--cerulean-100); // Light new feature background
+    --new-feature-color-border: var(--cerulean-500); // New feature border color
+    --new-font: 'Overpass', sans-serif; // Assuming 'Overpass' is the font family name
+  }
+}

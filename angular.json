@@ -30,7 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/themes/custom_styles.scss",
+              "src/themes/theme-1-light.scss",
+              "src/themes/theme-1-dark.scss",
+              "src/themes/theme-2-light.scss",
+              "src/themes/theme-2-dark.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -95,7 +100,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/themes/custom_styles.scss",
+              "src/themes/theme-1-light.scss",
+              "src/themes/theme-1-dark.scss",
+              "src/themes/theme-2-light.scss",
+              "src/themes/theme-2-dark.scss"
             ],
             "scripts": []
           }

@@ -1,0 +1,47 @@
+/* nav-rail-button.component.scss */
+.nav-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.nav-rail-logo {
+  /* Style your logo container as needed */
+  text-align: center; /* Center the logo horizontally */
+  padding: 10px 0; /* Adjust padding as needed */
+  width: 53px;
+  height: 53px;
+  color: #ffffff;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 56px;
+  height: 32px;
+  margin-bottom: 4px; /* Space between button and title */
+}
+
+.active-button {
+  background-color: #ffffff; /* Active background color */
+  border-radius: 30px;
+  width: 56px;
+  height: 32px;
+}
+
+.active-icon {
+  color: #93186c; /* Active icon color */
+}
+
+mat-icon {
+  color: #ffffff; /* Default icon color */
+}
+
+h5 {
+  margin: 0; /* Remove default margin */
+  color: #ffffff; /* Set the color of the title */
+  font-size: 0.8rem; /* Adjust the font size as needed */
+}

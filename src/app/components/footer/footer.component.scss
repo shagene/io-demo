@@ -1,0 +1,25 @@
+/* footer.component.scss */
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    // background-color: var(--footer-bg); /* Use the variable for footer background color */
+    color: var(--text-color); /* Use the variable for text color */
+  }
+  
+  .left-side span,
+  .right-side span {
+    margin: 0 10px; /* Add spacing between items if needed */
+  }
+
+  
+  /* Additional styles for the footer if needed */
+  

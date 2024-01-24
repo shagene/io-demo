@@ -1,0 +1,49 @@
+/* header.component.scss */
+
+.header-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .heading {
+  font-family: Overpass;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--text-color-header-heading);
+  margin: 0;
+}
+
+.header-right mat-icon {
+  margin-right: 8px; /* Adjust spacing between icons */
+}
+
+.clickable-icon {
+  font-size: 24;
+  color: var(--icon-color-header);
+  cursor: pointer;
+  padding: 11px;
+  border: 1px solid var(--icon-border-color-header);
+  border-radius: 8px;
+  margin-right: 8px; /* Adjust spacing between icons */
+  &:hover {
+    color: #555; /* Adjust hover color */
+  }
+}
+
+mat-icon {
+}

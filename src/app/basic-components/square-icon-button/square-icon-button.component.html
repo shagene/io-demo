@@ -1,0 +1,13 @@
+<!-- square-icon-button.component.html -->
+
+<button
+  mat-raised-button
+  [ngClass]="currentTheme"
+  class="common-stroked-button-styles"
+  [attr.aria-label]="ariaLabel"
+  [matBadge]="badgeContent"
+  [matBadgePosition]="badgePosition"
+  [matBadgeHidden]="badgeContent === 0"
+>
+  <mat-icon class="icon-size">{{ iconName }}</mat-icon>
+</button>

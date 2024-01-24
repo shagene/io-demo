@@ -1,0 +1,13 @@
+<!-- nav-rail-button.component.html -->
+<div class="nav-button-container">
+  <button
+    mat-icon-button
+    [routerLink]="route"
+    routerLinkActive="active-button"
+    #rla="routerLinkActive"
+    (click)="navigate()"
+  >
+    <mat-icon [class.active-icon]="rla.isActive">{{ icon }}</mat-icon>
+  </button>
+  <h5>{{ title }}</h5>
+</div>

@@ -6,12 +6,12 @@
 
   .theme-toggle-button {
     &.theme-1-light {
-      background-color: var(--disco-500);
-  color: white;
+      background-color: lightgray;
+  color: var(--disco-500);
     }
     &.theme-1-dark {
-      background-color: var(--genoa-500);
-      color: white;
+      background-color: lightgray;
+  color: var(--disco-500);
     }
   }
 

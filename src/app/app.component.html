@@ -1,7 +1,13 @@
 <app-bar></app-bar>
 <app-theme-switcher></app-theme-switcher>
 <app-nav-rail></app-nav-rail>
-<div [ngClass]="currentTheme" class="router-container" style="background-image: url('https://wallpapercave.com/wp/wp2293431.jpg');
+<!-- <div [ngClass]="currentTheme" class="router-container" style="background-image: url('https://wallpapercave.com/wp/wp2293431.jpg');
 background-position: strech;">
+  <router-outlet></router-outlet>
+</div> -->
+<div [ngClass]="currentTheme" class="router-container" style="background-image: url('../assets/images/space.gif');
+    background-size: cover; /* Adjust this property to fit your design needs */
+    background-position: center center;
+    background-repeat: no-repeat;">
   <router-outlet></router-outlet>
 </div>

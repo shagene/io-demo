@@ -22,8 +22,8 @@ export class AppComponent {
   themeSubscription: Subscription | undefined;
 
   backgroundImage1 = '../assets/images/space2.jpg';
-  backgroundImage2 = 'https://wallpapercave.com/wp/wp2293431.jpg';
-  currentBackgroundImage: string = this.backgroundImage1; // Add this line
+  backgroundImage2 = '../assets/images/space.gif';
+  currentBackgroundImage: string = this.backgroundImage1;
 
   constructor(private themeService: ThemeService) { }
 
@@ -40,12 +40,14 @@ export class AppComponent {
   }
 
   toggleBackgroundImage() {
+    console.log('Toggling background image...');
+  
     setTimeout(() => {
       this.currentBackgroundImage =
         this.currentBackgroundImage === this.backgroundImage1
           ? this.backgroundImage2
           : this.backgroundImage1;
-
+  
       this.toggleBackgroundImage(); // Call it again to continue toggling
     }, 5000); // Change background every 5 seconds (adjust as needed)
   }

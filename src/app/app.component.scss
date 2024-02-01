@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+.router-container {
+  background-size: 100% 100%;
+}
+
 app-bar {
   z-index: 2;
   width: calc(100% - 88px); /* Subtract nav-rail width */

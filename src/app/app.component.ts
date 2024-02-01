@@ -21,16 +21,33 @@ export class AppComponent {
   currentTheme: string | undefined;
   themeSubscription: Subscription | undefined;
 
+  backgroundImage1 = '../assets/images/space2.jpg';
+  backgroundImage2 = 'https://wallpapercave.com/wp/wp2293431.jpg';
+  currentBackgroundImage: string = this.backgroundImage1; // Add this line
+
   constructor(private themeService: ThemeService) { }
 
   ngOnInit() {
     this.themeSubscription = this.themeService.themeChanged$.subscribe((theme) => {
       this.currentTheme = theme;
     });
+
+    this.toggleBackgroundImage();
   }
 
   toggleTheme() {
     this.themeService.toggleTheme();
+  }
+
+  toggleBackgroundImage() {
+    setTimeout(() => {
+      this.currentBackgroundImage =
+        this.currentBackgroundImage === this.backgroundImage1
+          ? this.backgroundImage2
+          : this.backgroundImage1;
+
+      this.toggleBackgroundImage(); // Call it again to continue toggling
+    }, 5000); // Change background every 5 seconds (adjust as needed)
   }
 
   ngOnDestroy() {
